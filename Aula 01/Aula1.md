@@ -1,5 +1,6 @@
 # Como é feito o contato com os Dados do Banco (de Dados)
 
+![alt text](image-10.png)
 
 ## Middlewares 
 São as camadas que toda requisição atravessa para servir de validação e registro de históricos, levando em conta, especificamente nesse caso: identificador único, log de entrada e saída, verificação do token e ciclo de vida da sessão de banco. As sessões acontecem a cada interação do usuário com o banco de dados.  
@@ -53,3 +54,10 @@ São as tabelas do banco de dados, usando ORM, o SQL Alchemy para Python.
 
 ![alt text](image-7.png)
 ![alt text](image-8.png)
+
+---
+
+## DTO 
+Montagem do dicionário novo para devolver a entidade criada, traduzindo o objeto do banco de dados em JSON da resposta, dado o contexto e a rota da sessão. 
+
+![alt text](image-9.png)
